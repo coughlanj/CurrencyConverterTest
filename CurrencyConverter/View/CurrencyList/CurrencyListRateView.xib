@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CurrencyListRateView" customModule="CurrencyConvertor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="559" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycS-JG-uVu">
+                    <rect key="frame" x="16" y="48" width="477" height="173"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uK-JI-3iu">
+                    <rect key="frame" x="501" y="48" width="42" height="173"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7uK-JI-3iu" secondAttribute="bottom" constant="4" id="9kU-5d-NCA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7uK-JI-3iu" secondAttribute="trailing" constant="16" id="FKO-6R-t8d"/>
+                <constraint firstItem="ycS-JG-uVu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="L0K-me-Ctz"/>
+                <constraint firstItem="ycS-JG-uVu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="NAp-43-bPI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ycS-JG-uVu" secondAttribute="bottom" constant="4" id="TSP-7A-WJG"/>
+                <constraint firstItem="7uK-JI-3iu" firstAttribute="leading" secondItem="ycS-JG-uVu" secondAttribute="trailing" constant="8" id="rvF-u0-SOg"/>
+                <constraint firstItem="7uK-JI-3iu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="ykf-QY-jzK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="currencyLabel" destination="ycS-JG-uVu" id="D7u-5v-Kle"/>
+                <outlet property="rateLabel" destination="7uK-JI-3iu" id="Zzg-G1-HS9"/>
+            </connections>
+            <point key="canvasLocation" x="242.75362318840581" y="303.68303571428572"/>
+        </view>
+    </objects>
+</document>

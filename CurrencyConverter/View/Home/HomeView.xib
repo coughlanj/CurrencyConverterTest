@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CurrencyConverter" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="SHG-d4-ons" id="ldn-42-eFF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="EGc-UO-lYw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFJ-RZ-Cju">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SHG-d4-ons">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="81" placeholder="YES" id="s7q-aP-Mdf"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="SHG-d4-ons" secondAttribute="bottom" id="6qH-04-inc"/>
+                        <constraint firstItem="SHG-d4-ons" firstAttribute="top" secondItem="uFJ-RZ-Cju" secondAttribute="top" id="JJs-tC-zcC"/>
+                        <constraint firstItem="SHG-d4-ons" firstAttribute="leading" secondItem="uFJ-RZ-Cju" secondAttribute="leading" id="W9C-Rq-ErU"/>
+                        <constraint firstAttribute="trailing" secondItem="SHG-d4-ons" secondAttribute="trailing" id="kNu-9b-BEe"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uFJ-RZ-Cju" secondAttribute="trailing" id="H39-xd-mDV"/>
+                <constraint firstItem="uFJ-RZ-Cju" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MmC-Ap-8ND"/>
+                <constraint firstItem="SHG-d4-ons" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="eZn-ph-gfI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uFJ-RZ-Cju" secondAttribute="bottom" id="mdC-zP-vgQ"/>
+                <constraint firstItem="uFJ-RZ-Cju" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tK4-KK-QA3"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
+        </view>
+    </objects>
+</document>

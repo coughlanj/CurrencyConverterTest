@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E0D64B44-35B8-4776-ACAD-2777AD757B7A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F292821-34DF-43C0-894F-76B43A79A317"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConvertor/Manager/CurrencyConversionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "didSelectCurrency(_:viewController:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1F292821-34DF-43C0-894F-76B43A79A317 - a85c64ecbc8d5c1f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CurrencyConvertor.CurrencyConversionManager.didSelectCurrency(_: Swift.String, viewController: CurrencyConvertor.HomeViewController) -&gt; ()"
+                  moduleName = "CurrencyConvertor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/home/Desktop/CurrencyConvertor/CurrencyConvertor/Manager/CurrencyConversionManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  uuid = "1F292821-34DF-43C0-894F-76B43A79A317 - 95db3628c3346486"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;CurrencyConvertor.CurrencyResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in CurrencyConvertor.CurrencyConversionManager.didSelectCurrency(_: Swift.String, viewController: CurrencyConvertor.HomeViewController) -&gt; ()"
+                  moduleName = "CurrencyConvertor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/home/Desktop/CurrencyConvertor/CurrencyConvertor/Manager/CurrencyConversionManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "322">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9E44F0A-D31D-461F-B151-2A910985E203"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConvertor/Core/Custom Views/AnimatedSkeletonView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "AnimatedSkeletonView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32EA3365-9A88-4A96-AE27-1AA2DE8EEE57"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CurrencyConvertor/Core/Custom Views/AnimatedSkeletonView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "startAnimation(startLocations:endLocations:movingAnimationDuration:delayBetweenAnimationLoops:backgroundColor:animationColor:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

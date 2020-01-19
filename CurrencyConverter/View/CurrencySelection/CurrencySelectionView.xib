@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CurrencySelectionView" customModule="CurrencyConverter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="672" height="347"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6h-dt-qbn">
+                    <rect key="frame" x="16" y="200.5" width="128" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5WQ-mw-OTY"/>
+                        <constraint firstAttribute="width" constant="128" id="N9z-sr-m07"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Converter" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yqk-Qh-3z2">
+                    <rect key="frame" x="16" y="60" width="493" height="124.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="52"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LC5-xs-fpR">
+                    <rect key="frame" x="16" y="276.5" width="128" height="20.5"/>
+                    <state key="normal" title="refresh">
+                        <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressRefreshButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="CBq-2W-qom"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yv-HP-4dN">
+                    <rect key="frame" x="160" y="220" width="496" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zB-BB-dSo">
+                    <rect key="frame" x="13" y="256.5" width="134" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="aN6-z8-DJM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LC5-xs-fpR" firstAttribute="width" secondItem="R6h-dt-qbn" secondAttribute="width" id="3kO-LA-zYa"/>
+                <constraint firstItem="1zB-BB-dSo" firstAttribute="width" secondItem="R6h-dt-qbn" secondAttribute="width" multiplier="1.04688" id="6Tj-ZI-Shf"/>
+                <constraint firstItem="1zB-BB-dSo" firstAttribute="centerX" secondItem="R6h-dt-qbn" secondAttribute="centerX" id="7JG-qt-1KQ"/>
+                <constraint firstItem="R6h-dt-qbn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="GlZ-R5-INj"/>
+                <constraint firstItem="7yv-HP-4dN" firstAttribute="centerY" secondItem="R6h-dt-qbn" secondAttribute="centerY" id="Qvv-pp-pln"/>
+                <constraint firstItem="R6h-dt-qbn" firstAttribute="top" secondItem="Yqk-Qh-3z2" secondAttribute="bottom" constant="16" id="VgU-dy-z4D"/>
+                <constraint firstItem="1zB-BB-dSo" firstAttribute="top" secondItem="R6h-dt-qbn" secondAttribute="bottom" constant="-4" id="XI0-sb-Zmt"/>
+                <constraint firstItem="Yqk-Qh-3z2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="2.2:3" id="ccN-K3-nU0"/>
+                <constraint firstItem="LC5-xs-fpR" firstAttribute="centerX" secondItem="R6h-dt-qbn" secondAttribute="centerX" id="dXs-xF-l0K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7yv-HP-4dN" secondAttribute="trailing" constant="16" id="eeq-hk-W1q"/>
+                <constraint firstItem="Yqk-Qh-3z2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="hXO-jE-4Lo"/>
+                <constraint firstItem="LC5-xs-fpR" firstAttribute="top" secondItem="R6h-dt-qbn" secondAttribute="bottom" constant="16" id="jH3-Qh-sEf"/>
+                <constraint firstItem="Yqk-Qh-3z2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="uff-a5-bUQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LC5-xs-fpR" secondAttribute="bottom" constant="16" id="yhZ-k8-maN"/>
+                <constraint firstItem="7yv-HP-4dN" firstAttribute="leading" secondItem="R6h-dt-qbn" secondAttribute="trailing" constant="16" id="zAC-QM-pQ9"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="currencyLabel" destination="7yv-HP-4dN" id="aZO-MQ-Juj"/>
+                <outlet property="refreshButton" destination="LC5-xs-fpR" id="gca-Rg-RVZ"/>
+                <outlet property="textField" destination="R6h-dt-qbn" id="qlE-de-uV4"/>
+            </connections>
+            <point key="canvasLocation" x="311.59420289855075" y="131.58482142857142"/>
+        </view>
+    </objects>
+</document>
