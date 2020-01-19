@@ -89,7 +89,7 @@ extension CurrencySelectionView: UITextFieldDelegate {
    }
    
    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-      didPressRefreshButton(textField)
+      textField.resignFirstResponder()
       return false
    }
 }
